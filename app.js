@@ -62,3 +62,12 @@ function expressionMatter(a, b, c) {
 function feast(beast, dish) {
     return beast.slice(0, 1) === dish.slice(0, 1) && beast.slice(-1) === dish.slice(-1);
 }
+
+//https://www.codewars.com/kata/grasshopper-terminal-game-combat-function-1/train/javascript
+function combat(health, damage) {
+    var result = health - damage;
+    if (result < 0) {
+        result = 0;
+    }
+    return result;
+}
