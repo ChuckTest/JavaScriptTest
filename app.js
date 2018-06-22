@@ -55,3 +55,11 @@ function expressionMatter(a, b, c) {
     array.push(a * b * c);
     return Math.max(...array);
 }
+
+
+//https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
+function feast(beast, dish) {
+    var index1 = beast.length - 1;
+    var index2 = dish.length - 1;
+    return beast[0] === dish[0] && beast[index1] === dish[index2];
+}
