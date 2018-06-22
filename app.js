@@ -42,3 +42,16 @@ function customToFixed(n, precision) {
     var power = Math.pow(10, precision);
     return Math.round(n * power) / power;
 }
+
+
+//https://www.codewars.com/kata/expressions-matter/train/javascript
+function expressionMatter(a, b, c) {
+    var array = [];
+    array.push(a + b + c);
+    array.push(a + b * c);
+    array.push((a + b) * c);
+    array.push(a * b + c);
+    array.push(a * (b + c));
+    array.push(a * b * c);
+    return Math.max(...array);
+}
