@@ -30,3 +30,15 @@ var countSheep = function (num) {
 function strCount(str, letter) {
     return str.split(letter).length - 1;
 }
+
+
+//https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+function circleCircumference(circle) {
+    var result = 2 * Math.PI * circle.radius;
+    return customToFixed(result, 6);
+}
+
+function customToFixed(n, precision) {
+    var power = Math.pow(10, precision);
+    return Math.round(n * power) / power;
+}
