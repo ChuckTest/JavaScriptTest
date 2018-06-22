@@ -75,11 +75,5 @@ function combat(health, damage) {
 //https://www.codewars.com/kata/training-js-number-18-methods-of-string-object-concat-split-and-its-good-friend-join/train/javascript
 function splitAndMerge(str, sp) {
     var space = ' ';
-    var array = str.split(space);
-    var list = [];
-    for (var i = 0; i < array.length; i++) {
-        var temp = array[i].split('').join(sp);
-        list.push(temp);
-    }
-    return list.join(space);
+    return str.split(space).map(x => x.split('').join(sp)).join(space);
 }
