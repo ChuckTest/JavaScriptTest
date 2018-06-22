@@ -16,3 +16,12 @@ function isDigit(s) {
     return !isNaN(parseFloat(s)) && !isNaN(s - 0);
 }
 
+https://www.codewars.com/kata/if-you-cant-sleep-just-count-sheeps/train/javascript
+var countSheep = function (num) {
+    var array = [];
+    for (var i = 1; i <= num; i++) {
+        array.push(`${i} sheep...`);
+    }
+    var s = array.join('');
+    return s;
+}
