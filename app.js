@@ -58,8 +58,7 @@ function expressionMatter(a, b, c) {
 
 
 //https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 function feast(beast, dish) {
-    var index1 = beast.length - 1;
-    var index2 = dish.length - 1;
-    return beast[0] === dish[0] && beast[index1] === dish[index2];
+    return beast[0] === dish[0] && beast.slice(-1) === dish.slice(-1);
 }
