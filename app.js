@@ -77,3 +77,14 @@ function splitAndMerge(str, sp) {
     var space = ' ';
     return str.split(space).map(x => x.split('').join(sp)).join(space);
 }
+
+
+//https://www.codewars.com/kata/century-from-year/train/javascript
+function century(year) {
+    var result = year / 100;
+    if (year % 100 === 0) {
+    } else {
+        result++;
+    }
+    return Math.floor(result);
+}
