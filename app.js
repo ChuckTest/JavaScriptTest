@@ -88,3 +88,9 @@ function century(year) {
     }
     return Math.floor(result);
 }
+
+
+//https://www.codewars.com/kata/convert-to-binary/train/javascript
+function toBinary(n) {
+    return Number.parseInt(n.toString(2));
+}
