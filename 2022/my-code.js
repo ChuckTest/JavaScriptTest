@@ -5,6 +5,10 @@ class Animal {
       this.species = species;
       this.habitat = habitat;
     }
+  
+    breathe() {
+      console.log('The animal is breathing.');
+    }
   }
   
   // Define the Mammal class, which is derived from the Animal class
@@ -33,4 +37,7 @@ class Animal {
   console.log(cat.habitat); // Output: Domestic
   console.log(cat.furColor); // Output: White
   console.log(cat.hasTail); // Output: true
+  
+  // The cat object can also call the breathe method of the Animal class
+  cat.breathe(); // Output: The animal is breathing.
   
